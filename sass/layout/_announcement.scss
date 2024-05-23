@@ -1,0 +1,24 @@
+.announcement {
+  display: grid;
+  row-gap: 1.6rem;
+
+  &__heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 10.83px;
+    line-height: 1.05;
+    color: var(--neutral-dark-grayish-red);
+
+    &--span {
+      font-weight: 300;
+      color: var(--primary-desaturated-red);
+    }
+  }
+
+  &__paragraph {
+    color: var(--primary-desaturated-red);
+    text-align: center;
+    line-height: 1.57;
+  }
+}

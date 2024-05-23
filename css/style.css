@@ -2,8 +2,11 @@
 .u-margin-left {
   margin-left: 3.2rem; }
 
-.u-margin-top {
-  margin-top: 6.4rem; }
+.u-padding-bottom {
+  padding-bottom: 1.6rem; }
+
+.u-padding {
+  padding: 6.4rem 3.2rem 0 3.2rem; }
 
 :root {
   --primary-desaturated-red: hsl(0, 36%, 70%);
@@ -32,6 +35,30 @@ body {
 body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
+
+.heading-1 {
+  font-size: clamp(4rem, 10.667vw, 6.4rem); }
+
+.paragraph {
+  font-size: clamp(1.4rem, 3.733vw, 1.6rem); }
+
+.announcement {
+  display: grid;
+  row-gap: 1.6rem; }
+  .announcement__heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 10.83px;
+    line-height: 1.05;
+    color: var(--neutral-dark-grayish-red); }
+    .announcement__heading--span {
+      font-weight: 300;
+      color: var(--primary-desaturated-red); }
+  .announcement__paragraph {
+    color: var(--primary-desaturated-red);
+    text-align: center;
+    line-height: 1.57; }
 
 .header {
   display: grid;
