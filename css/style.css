@@ -40,6 +40,7 @@ html {
 body {
   box-sizing: border-box;
   display: grid;
+  grid-template-rows: 8.4rem;
   min-height: 100vh;
   background: var(--linear-1); }
   @media screen and (min-width: 62.5em) {
