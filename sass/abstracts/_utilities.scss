@@ -2,10 +2,18 @@
   margin-left: 3.2rem;
 }
 
+.u-margin-left-sm {
+  margin-left: 2.4rem;
+}
+
 .u-padding-bottom {
   padding-bottom: 1.6rem;
 }
 
 .u-padding {
-  padding: 6.4rem 3.2rem 0 3.2rem;
+  padding: 6.4rem 3.2rem 9.2rem 3.2rem;
+}
+
+.u-error {
+  color: $primary-soft-red;
 }
