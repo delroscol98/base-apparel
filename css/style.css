@@ -70,12 +70,12 @@ body {
     color: #ce9797;
     position: absolute;
     left: 0%;
-    top: -1.5rem;
+    top: -1.8rem;
     transition: all 0.2s; }
   .announcement__input {
     background: transparent;
     border: 1px solid #ce9797;
-    padding: 1.1rem 6.4rem 1.1rem 2.4rem;
+    padding: 1.1rem 10rem 1.1rem 2.4rem;
     border-radius: 2.8rem;
     line-height: 1.7;
     font-family: inherit;
@@ -87,11 +87,18 @@ body {
     visibility: hidden;
     opacity: 0;
     transform: translateY(2rem); }
+  .announcement__input:invalid ~ .announcement__message {
+    opacity: 1;
+    bottom: -2rem; }
+  .announcement__input:invalid ~ .announcement__error {
+    opacity: 1; }
   .announcement__error {
     position: absolute;
     right: 7rem;
     top: 50%;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.2s; }
   .announcement__btn {
     position: absolute;
     right: 0;
@@ -105,7 +112,9 @@ body {
   .announcement__message {
     font-size: 1.3rem;
     position: absolute;
-    bottom: -2rem; }
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.2s; }
 
 .header {
   display: grid;

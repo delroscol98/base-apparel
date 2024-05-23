@@ -32,14 +32,14 @@
     color: $primary-desaturated-red;
     position: absolute;
     left: 0%;
-    top: -1.5rem;
+    top: -1.8rem;
     transition: all 0.2s;
   }
 
   &__input {
     background: transparent;
     border: 1px solid $primary-desaturated-red;
-    padding: 1.1rem 6.4rem 1.1rem 2.4rem;
+    padding: 1.1rem 10rem 1.1rem 2.4rem;
     border-radius: 2.8rem;
     line-height: 1.7;
     font-family: inherit;
@@ -57,11 +57,22 @@
     transform: translateY(2rem);
   }
 
+  &__input:invalid ~ &__message {
+    opacity: 1;
+    bottom: -2rem;
+  }
+
+  &__input:invalid ~ &__error {
+    opacity: 1;
+  }
+
   &__error {
     position: absolute;
     right: 7rem;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.2s;
   }
 
   &__btn {
@@ -79,6 +90,8 @@
   &__message {
     font-size: 1.3rem;
     position: absolute;
-    bottom: -2rem;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.2s;
   }
 }
