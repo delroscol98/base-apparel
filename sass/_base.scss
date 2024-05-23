@@ -7,9 +7,12 @@
 }
 
 html {
-  font-size: 43.75%; //16px * 43.75% = 7px
+  font-size: 62.5%; //16 * 62.5% = 10px
 }
 
 body {
   box-sizing: border-box;
+
+  display: grid;
+  grid-template-rows: 8.4rem min-content min-content;
 }

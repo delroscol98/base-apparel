@@ -18,7 +18,9 @@ body {
   box-sizing: inherit; }
 
 html {
-  font-size: 43.75%; }
+  font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 8.4rem min-content min-content; }
