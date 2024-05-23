@@ -1,5 +1,9 @@
 .u-margin-left {
   margin-left: 3.2rem;
+
+  @media screen and (min-width: 75em) {
+    margin-left: 16.5rem;
+  }
 }
 
 .u-margin-left-sm {
@@ -12,6 +16,10 @@
 
 .u-padding {
   padding: 6.4rem 3.2rem 9.2rem 3.2rem;
+
+  @media screen and (min-width: 75em) {
+    padding: 12rem 22rem 15.2rem 16.5rem;
+  }
 }
 
 .u-error {

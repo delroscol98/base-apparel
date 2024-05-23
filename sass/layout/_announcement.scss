@@ -14,18 +14,27 @@
       font-weight: 300;
       color: $primary-desaturated-red;
     }
+
+    @media screen and (min-width: $bp-medium) {
+      text-align: left;
+    }
   }
 
   &__paragraph {
     color: $primary-desaturated-red;
     text-align: center;
     line-height: 1.57;
+
+    @media screen and (min-width: $bp-medium) {
+      text-align: left;
+    }
   }
 
   &__form {
     position: relative;
     display: block;
     width: 100%;
+    height: min-content;
   }
 
   &__label {
@@ -52,26 +61,27 @@
   }
 
   &__input:placeholder-shown ~ &__label {
-    visibility: hidden;
-    opacity: 0;
+    @include hideEl;
     transform: translateY(2rem);
   }
 
   &__input:invalid ~ &__message {
-    opacity: 1;
+    @include showEl;
+
     bottom: -2rem;
   }
 
   &__input:invalid ~ &__error {
-    opacity: 1;
+    @include showEl;
   }
 
   &__error {
+    @include hideEl;
+
     position: absolute;
     right: 7rem;
     top: 50%;
     transform: translateY(-50%);
-    opacity: 0;
     transition: all 0.2s;
   }
 
@@ -88,10 +98,10 @@
   }
 
   &__message {
+    @include hideEl;
     font-size: 1.3rem;
     position: absolute;
-    bottom: 0;
-    opacity: 0;
+    bottom: 2rem;
     transition: all 0.2s;
   }
 }

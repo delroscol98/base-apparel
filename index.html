@@ -26,7 +26,21 @@
       />
     </header>
     <div class="hero">
-      <img src="./images/hero-mobile.jpg" alt="hero" class="hero__img" />
+      <picture>
+        <source
+          media="(max-width: 62.5em)"
+          srcset="./images/hero-mobile.jpg"
+          alt="hero"
+          class="hero__img"
+        />
+        <source
+          media="(min-width: 62.6em)"
+          srcset="./images/hero-desktop.jpg"
+          alt="hero"
+          class="hero__img"
+        />
+        <img src="./images/hero-desktop.jpg" alt="hero" class="hero__img" />
+      </picture>
     </div>
     <main class="announcement u-padding">
       <h1 class="announcement__heading heading-1">

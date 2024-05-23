@@ -2,7 +2,12 @@
   display: grid;
   align-content: center;
 
+  @media screen and (min-width: $bp-medium) {
+    grid-column: 1 / 2;
+  }
+
   &__logo {
-    width: 10rem;
+    width: 26.667vw;
+    max-width: 15.8rem;
   }
 }

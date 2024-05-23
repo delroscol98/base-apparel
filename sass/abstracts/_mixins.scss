@@ -1,0 +1,9 @@
+@mixin hideEl {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@mixin showEl {
+  opacity: 1;
+  visibility: visible;
+}
