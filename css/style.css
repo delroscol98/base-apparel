@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+.u-margin-left {
+  margin-left: 3.2rem; }
+
 :root {
   --primary-desaturated-red: hsl(0, 36%, 70%);
   --primary-soft-red: hsl(0, 93%, 68%);
   --neutral-dark-grayish-red: hsl(0, 6%, 24%);
   --linear-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   --linear-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); }
-
-body {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400; }
 
 *,
 *::before,
@@ -24,3 +23,11 @@ body {
   box-sizing: border-box;
   display: grid;
   grid-template-rows: 8.4rem min-content min-content; }
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.header {
+  display: grid;
+  align-content: center; }
