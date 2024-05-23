@@ -59,7 +59,7 @@ Simple but powerful form validation.
 />
 ```
 
-An example of using mixins and advanced CSS
+An example of using mixins and advanced CSS selectors
 
 ```css
 &__input:placeholder-shown ~ &__label {

@@ -109,6 +109,8 @@ body {
     opacity: 0;
     visibility: hidden;
     transform: translateY(2rem); }
+  .announcement__input:invalid {
+    border: 2px solid #f96262; }
   .announcement__input:invalid ~ .announcement__message {
     opacity: 1;
     visibility: visible;
