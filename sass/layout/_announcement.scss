@@ -65,6 +65,10 @@
     transform: translateY(2rem);
   }
 
+  &__input:invalid {
+    border: 2px solid $primary-soft-red;
+  }
+
   &__input:invalid ~ &__message {
     @include showEl;
 
