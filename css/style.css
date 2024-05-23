@@ -68,7 +68,10 @@ body {
     width: 100%; }
   .announcement__label {
     color: #ce9797;
-    position: absolute; }
+    position: absolute;
+    left: 0%;
+    top: -1.5rem;
+    transition: all 0.2s; }
   .announcement__input {
     background: transparent;
     border: 1px solid #ce9797;
@@ -80,6 +83,10 @@ body {
     width: 100%; }
     .announcement__input::placeholder {
       color: #ce9797; }
+  .announcement__input:placeholder-shown ~ .announcement__label {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(2rem); }
   .announcement__error {
     position: absolute;
     right: 7rem;
@@ -97,7 +104,8 @@ body {
     box-shadow: 0 1.5rem 2rem #ce9797; }
   .announcement__message {
     font-size: 1.3rem;
-    position: absolute; }
+    position: absolute;
+    bottom: -2rem; }
 
 .header {
   display: grid;

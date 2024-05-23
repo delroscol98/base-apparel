@@ -31,6 +31,9 @@
   &__label {
     color: $primary-desaturated-red;
     position: absolute;
+    left: 0%;
+    top: -1.5rem;
+    transition: all 0.2s;
   }
 
   &__input {
@@ -46,6 +49,12 @@
     &::placeholder {
       color: $primary-desaturated-red;
     }
+  }
+
+  &__input:placeholder-shown ~ &__label {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(2rem);
   }
 
   &__error {
@@ -70,5 +79,6 @@
   &__message {
     font-size: 1.3rem;
     position: absolute;
+    bottom: -2rem;
   }
 }
