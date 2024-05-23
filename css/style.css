@@ -145,7 +145,7 @@ body {
 .header {
   display: grid;
   align-content: center; }
-  @media screen and (min-width: 37.5em) {
+  @media screen and (min-width: 62.5em) {
     .header {
       grid-column: 1 / 2;
       height: min-content;
