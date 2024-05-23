@@ -33,7 +33,7 @@
 
 html {
   font-size: 62.5%; }
-  @media screen and (min-width: 90em) {
+  @media screen and (min-width: 90.1em) {
     html {
       font-size: 75%; } }
 
@@ -45,6 +45,8 @@ body {
   background: var(--linear-1); }
   @media screen and (min-width: 62.5em) {
     body {
+      background-image: url(../../images/bg-pattern-desktop.svg);
+      background-size: contain;
       grid-template-rows: 8.4rem auto;
       grid-template-columns: auto 42.361%; } }
 
