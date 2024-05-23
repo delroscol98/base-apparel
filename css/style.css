@@ -2,6 +2,9 @@
 .u-margin-left {
   margin-left: 3.2rem; }
 
+.u-margin-top {
+  margin-top: 6.4rem; }
+
 :root {
   --primary-desaturated-red: hsl(0, 36%, 70%);
   --primary-soft-red: hsl(0, 93%, 68%);
@@ -22,7 +25,9 @@ html {
 body {
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: 8.4rem min-content min-content; }
+  grid-template-rows: 8.4rem min-content min-content;
+  min-height: 100vh;
+  background: var(--linear-1); }
 
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -31,3 +36,8 @@ body {
 .header {
   display: grid;
   align-content: center; }
+  .header__logo {
+    width: 10rem; }
+
+.hero__img {
+  width: 100%; }
