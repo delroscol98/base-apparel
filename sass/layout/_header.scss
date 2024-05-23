@@ -4,6 +4,8 @@
 
   @media screen and (min-width: $bp-medium) {
     grid-column: 1 / 2;
+    height: min-content;
+    margin-top: 6.5rem;
   }
 
   &__logo {

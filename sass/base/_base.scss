@@ -17,14 +17,13 @@ html {
 body {
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: 8.4rem;
   min-height: 100vh;
   background: var(--linear-1);
 
   @media screen and (min-width: $bp-large) {
     background-image: url(../../images/bg-pattern-desktop.svg);
     background-size: contain;
-    grid-template-rows: 8.4rem auto;
+    grid-template-rows: min-content auto;
     grid-template-columns: auto 42.361%;
   }
 }
